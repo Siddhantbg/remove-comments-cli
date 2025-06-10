@@ -1,0 +1,82 @@
+/* index.module.css */
+
+.heroBanner {
+  padding: 4rem 0;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  border-radius: 9999px;
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+}
+
+.featuresSection {
+  padding: 4rem 0;
+}
+
+.theme--dark .featuresSection {
+  background: var(--ifm-color-emphasis-700);
+}
+
+.featuresRow {
+  /* Docusaurus handle: row layout */
+}
+
+.featureCard {
+  background-color:aliceblue;
+  /* background: var(--ifm-card-background-color); */
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--ifm-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--ifm-shadow--md);
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.featureDescription {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--ifm-font-color-base);
+}
+
+/* Ensure cards stack on mobile - Docusaurus handles this automatically */
+@media (max-width: 767px) {
+  .featureCard {
+    margin-bottom: 2rem;
+  }
+}

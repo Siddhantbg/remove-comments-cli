@@ -1,0 +1,81 @@
+{
+  "name": "remove-comments-cli",
+  "version": "1.0.0",
+  "description": "A fast and flexible CLI tool to remove comments from JavaScript/TypeScript files while preserving important ones",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "remove-comments": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "docs/",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test": "jest --config jest.config.cjs --coverage",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "bench": "node bench/run-bench.js",
+    "docs:start": "npm --prefix docs start",
+    "docs:build": "npm --prefix docs build",
+    "prepare": "npm run build",
+    "preversion": "npm run lint && npm test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "cli",
+    "comments",
+    "typescript",
+    "javascript",
+    "jsx",
+    "tsx",
+    "remove",
+    "strip",
+    "preserve",
+    "code",
+    "cleanup",
+    "formatter"
+  ],
+  "author": {
+    "name": "Siddhant Bhagat",
+    "email": "siddhantbg005@gmail.com",
+    "url": "https://github.com/siddhantbg"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "glob": "^10.3.3"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "jest": "^29.6.2",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhantbg/remove-comments-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siddhantbg/remove-comments-cli/issues"
+  },
+  "homepage": "https://siddhantbg.github.io/remove-comments-cli"
+}
