@@ -39,10 +39,15 @@ npx remove-comments-cli [options] <file>
 
 2. Run it on a file:
    ```bash
+   npx remove-comments file.js -o cleaned/
+   ```
+
+3. Run it on a file (Output on Terminal):
+   ```bash
    remove-comments file.js
    ```
 
-3. Or use it with multiple files:
+4. Or use it with multiple files:
    ```bash
    remove-comments src/**/*.ts
    ```
