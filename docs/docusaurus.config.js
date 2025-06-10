@@ -11,13 +11,13 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-org.github.io',
+  url: 'https://remove-comments-cli.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/remove-comments-cli/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
+  organizationName: 'Siddhantbg', // Usually your GitHub org/user name.
   projectName: 'remove-comments-cli', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -68,7 +68,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/your-org/remove-comments-cli',
+            href: 'https://github.com/Siddhantbg/remove-comments-cli',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-org/remove-comments-cli',
+                href: 'https://github.com/Siddhantbg/remove-comments-cli',
               },
               {
                 label: 'npm',
