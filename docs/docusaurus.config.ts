@@ -15,10 +15,12 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://siddhantbg.github.io',
+  url: process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : 'https://siddhantbg.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/remove-comments-cli/',
+  baseUrl: process.env.VERCEL ? '/' : '/remove-comments-cli/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
