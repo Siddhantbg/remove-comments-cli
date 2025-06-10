@@ -1,4 +1,5 @@
 import React from 'react';
+import type {JSX} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -17,7 +18,7 @@ function HomepageHeader() {
         <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
         <Link
           className={clsx('button button--secondary button--lg', styles.ctaButton)}
-          to="/remove-comments-cli/getting-started"
+          to="/getting-started"
         >
           Get Started →
         </Link>
